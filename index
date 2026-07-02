@@ -1,0 +1,75 @@
+<html>
+<style>
+	@font-face {
+		font-family: myFirstFont;
+
+		src: url("./font/TovariSans.otf");
+	}
+
+	*{
+   		font-family: myFirstFont;
+		font-size: 19px;
+	
+	}
+
+</style>
+
+<script>
+var contador_num = 0;
+var slider_num = 1;
+
+function slider(){
+	document.getElementById("slider"+slider_num).style.display = "block";
+	document.getElementById("marcador"+slider_num).style.backgroundColor = "#FF6600";
+	if(contador_num < 5){
+		contador_num++;
+	} else if(contador_num == 5){
+		contador_num = 0;
+		document.getElementById("slider"+slider_num).style.display = "none";
+		document.getElementById("marcador"+slider_num).style.backgroundColor = "green";
+		if(slider_num == 4){
+			slider_num = 0;
+		}
+		slider_num++; 
+	}
+}
+
+setInterval(slider, 1000);
+
+function redirecionar(){
+	link_str = document.getElementById("cxAcao").value;
+	window.location.assign(link_str);
+}
+</script>
+
+<body style="overflow-x: hidden; overflow-y: scroll;">
+<div id="palco" style="border:2px solid red; width:98%; height:99%; margin-left:auto; margin-right:auto; display:block;">
+	<div style="position:absolute; width:90%; left:5%; margin-top:25%; text-align: center;"/>Carregando...</div>
+	<img src="./img/site/bgSite.jpg" style="position:absolute; width:98%; left:1%; margin-top:-2%;"/>
+
+	<img id="slider1" src="./img/site/slider1.png" style="position:absolute; width:50%; left:25%; margin-top:32%; display:none;"/>
+	<img id="slider2" src="./img/site/slider2.png" style="position:absolute; width:50%; left:25%; margin-top:32%; display:none;"/>
+	<img id="slider3" src="./img/site/slider3.png" style="position:absolute; width:50%; left:25%; margin-top:32%; display:none;"/>
+	<img id="slider4" src="./img/site/slider4.png" style="position:absolute; width:50%; left:25%; margin-top:32%; display:none;"/>
+
+	<div id="marcador1" style="position:absolute; border-radius: 150px; background-color:green; width:3%; height:2%; left:24%; margin-top:90%;"/>
+	</div>
+	<div id="marcador2" style="position:absolute; border-radius: 150px; background-color:green; width:3%; height:2%; left:40%; margin-top:90%;"/>
+	</div>
+	<div id="marcador3" style="position:absolute; border-radius: 150px; background-color:green; width:3%; height:2%; left:56%; margin-top:90%;"/>
+	</div>
+	<div id="marcador4" style="position:absolute; border-radius: 150px; background-color:green; width:3%; height:2%; left:73%; margin-top:90%;"/>
+	</div>
+
+	<select id="cxAcao" style="position:absolute; width:30%; left:35%; margin-top:93%;" onchange="redirecionar();">
+		<option id="" value="">Caixa AÇÃO</option>
+		<option id="memoria" value="jMemoria.html">Jogo da Memória</option>
+		<option id="pdf3" value="PDF3">PDF Passatempos 3</option>
+		<option id="pdf2" value="PDF2">PDF Passatempos 2</option>
+		<option id="pdf1" value="PDF1">PDF Passatempos 1</option>
+	</select>
+
+
+</div>
+</body>
+</html>
