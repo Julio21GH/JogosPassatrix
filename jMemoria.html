@@ -1,0 +1,295 @@
+<html>
+<style>
+	@font-face {
+		font-family: myFirstFont;
+
+		src: url("./font/TovariSans.otf");
+	}
+
+	*{
+   		font-family: myFirstFont;
+		font-size: 20px;
+	
+	}
+
+</style>
+<script>
+var escalaBt_num = 1;
+var escalaFig_num = 0;
+var tempoEfeito_num = 0;
+var frame_num = 1;
+
+var botao_num = 0;
+
+var tempoChecarPares_num = 0;
+
+
+
+var id_arr = [0,0,0];
+var clicadas_arr = [];
+var resposta_arr = ["","E1","E1","T1","T1","D1","D1","F2","F2","F1","F1","E2","E2","T2","T2","D2","D2"];
+var figuras_arr = ["","./img/site/jM_molduraEst.png", "./img/site/jM_molduraEst.png", 
+"./img/site/jM_molduraTuq.png","./img/site/jM_molduraTuq.png", "./img/site/jM_molduraDor.png",
+"./img/site/jM_molduraDor.png", "./img/site/jM_molduraFir2.png", "./img/site/jM_molduraFir2.png", 
+"./img/site/jM_molduraFir.png", "./img/site/jM_molduraFir.png",	"./img/site/jM_molduraEst2.png", 
+"./img/site/jM_molduraEst2.png", "./img/site/jM_molduraTuq2.png", "./img/site/jM_molduraTuq2.png", 
+"./img/site/jM_molduraAlk2.png", "./img/site/jM_molduraAlk2.png"];
+
+
+var respostaSorteada_arr = [];
+var figuraSorteada_arr = [];
+
+var arrayResultante_arr = [];
+var arrayAuxiliar_arr = [];
+var indexSorteio_num = 1;
+var totalPossibilidadesMostradas_num = 16;
+var maximoPossibilidadesBanco_num = 16;
+
+/****	GERANDO POSIÇÕES ALEATÓRIAS	*********/
+	function construirArrayAleatoria(itemSorteado_num){
+		if(indexSorteio_num < totalPossibilidadesMostradas_num + 1 && arrayAuxiliar_arr[itemSorteado_num] == 1){
+			arrayAuxiliar_arr[itemSorteado_num] = '';
+			arrayResultante_arr[indexSorteio_num] = itemSorteado_num;
+			indexSorteio_num++;
+			construirArrayAleatoria(getRandomInt(1, maximoPossibilidadesBanco_num+1));
+
+		} else if(indexSorteio_num<totalPossibilidadesMostradas_num + 1 && arrayAuxiliar_arr[itemSorteado_num] == ''){
+			construirArrayAleatoria(getRandomInt(1, maximoPossibilidadesBanco_num+1));
+		}
+
+	}
+
+	function getRandomInt(min, max) {
+		min = Math.ceil(min);
+		max = Math.floor(max);
+		return Math.floor(Math.random() * (max - min)) + min;
+	}
+
+
+function init(){
+
+	for(j=1; j<maximoPossibilidadesBanco_num + 1; j++){
+		arrayAuxiliar_arr[j] = 1;
+	}
+
+	construirArrayAleatoria(getRandomInt(1, maximoPossibilidadesBanco_num+1));
+
+	for(i=1;i<17;i++){
+		clicarBotoes(i);
+		posicaoX(i);
+	}
+	
+
+}
+
+function posicaoX(i){
+	respostaSorteada_arr[i] = resposta_arr[arrayResultante_arr[i]];
+	figuraSorteada_arr[i] = figuras_arr[arrayResultante_arr[i]];
+	document.getElementById("img"+i).src = figuraSorteada_arr[i];
+}
+
+function clicarBotoes(i){
+	document.getElementById("bt"+i).onclick = function(){	
+		clearInterval(tempoEfeito_num); //corrigir bug	
+		if(id_arr[1] == 0 && id_arr[2] == 0){
+			id_arr[1] = i;
+			clicadas_arr[1] = respostaSorteada_arr[i];
+			iniciarEfeitoFlip(i);
+		}else if(id_arr[1] != 0 && id_arr[2] == 0){
+			id_arr[2] = i;
+			clicadas_arr[2] = respostaSorteada_arr[i];
+			iniciarEfeitoFlip(i);
+			tempoChecarPares_num = setInterval(checarPares,2000);			
+		}
+	}
+}
+
+function checarPares(){
+	if(clicadas_arr[1] == clicadas_arr[2]){
+
+
+	} else if(clicadas_arr[1] != clicadas_arr[2]){
+		document.getElementById("bt"+id_arr[1]).style.transform = "scale(1,1)";
+		document.getElementById("img"+id_arr[1]).style.transform = "scale(0,1)";
+
+		document.getElementById("bt"+id_arr[2]).style.transform = "scale(1,1)";
+		document.getElementById("img"+id_arr[2]).style.transform = "scale(0,1)";
+
+		clearInterval(tempoChecarPares_num); //corrigir bug
+		clearInterval(tempoEfeito_num); //corrigir bug
+		id_arr = [0,0,0]; //corrigir bug
+		clicadas_arr = [];//corrigir bug
+
+
+	}
+
+	id_arr = [0,0,0];
+	clicadas_arr = [];
+	clearInterval(tempoChecarPares_num);
+}
+
+
+function iniciarEfeitoFlip(bt_num){
+	frame_num = 1;
+	botao_num = bt_num;
+	escalaBt_num = 1;
+	escalaFig_num = 0;
+	tempoEfeito_num = setInterval(efeitoFlip,50);
+}
+
+function efeitoFlip(){
+	if(frame_num < 10){	
+		frame_num = frame_num + 1;			
+	} else {
+		frame_num = 1;
+		clearInterval(tempoEfeito_num);
+	}
+
+	switch(frame_num){
+		case 2: escalaBt_num = escalaBt_num - 0.1;
+		break;
+
+		case 3: escalaBt_num = escalaBt_num - 0.1;
+		break;
+
+		case 4: escalaBt_num = escalaBt_num - 0.1;
+		break;
+
+		case 5: escalaBt_num = 0.1;
+			escalaFig_num = 0.1;
+		break;
+
+		case 6: escalaBt_num = 0;
+			escalaFig_num = escalaFig_num + 0.1;
+		break;
+
+		case 7: escalaFig_num = escalaFig_num + 0.1;
+		break;
+
+		case 8: escalaFig_num = escalaFig_num + 0.1;
+		break;
+
+		case 9: escalaFig_num = 1;
+			clearInterval(tempoEfeito_num);
+		break;
+	}
+
+	document.getElementById("bt"+botao_num).style.transform = "scale(" + escalaBt_num +",1)";
+	document.getElementById("img"+botao_num).style.transform = "scale(" + escalaFig_num+",1)";
+}
+
+</script>
+
+<body onload="init();">
+		<div style="width:99%; text-align: center;">
+			<img id="titulo" src="./img/site/titulo.png" width="47%"/>
+		</div>
+	<div id="palco" style="border:2px solid white; position:absolute; width:60%; padding:0 0 40% 0; margin-left:20%; display:flex; flex-direction:column;">
+		<div  style="position:absolute; width:12%; left:12%; top:0%;" >
+			<img id="img1" src="" width="99%"/>
+		</div>
+		<div style="position:absolute; width:12%; left:32%; top:0%;" >
+			<img id="img2" src="" width="99%"/>
+		</div>
+		<div  style="position:absolute; width:12%; left:52%; top:0%;" >
+			<img id="img3" src="" width="99%"/>
+		</div>
+		<div style="position:absolute; width:12%; left:72%; top:0%;" >
+			<img id="img4" src="" width="99%"/>
+		</div>
+		<div  style="position:absolute; width:12%; left:12%; top:25%;" >
+			<img id="img5" src="" width="99%"/>
+		</div>
+		<div style="position:absolute; width:12%; left:32%; top:25%;" >
+			<img id="img6" src="" width="99%"/>
+		</div>
+		<div  style="position:absolute; width:12%; left:52%; top:25%;" >
+			<img id="img7" src="" width="99%"/>
+		</div>
+		<div style="position:absolute; width:12%; left:72%; top:25%;" >
+			<img id="img8" src="" width="99%"/>
+		</div>
+		<div  style="position:absolute; width:12%; left:12%; top:50%;" >
+			<img id="img9" src="" width="99%"/>
+		</div>
+		<div style="position:absolute; width:12%; left:32%; top:50%;" >
+			<img id="img10" src="" width="99%"/>
+		</div>
+		<div  style="position:absolute; width:12%; left:52%; top:50%;" >
+			<img id="img11" src="" width="99%"/>
+		</div>
+		<div style="position:absolute; width:12%; left:72%; top:50%;" >
+			<img id="img12" src="" width="99%"/>
+		</div>
+		<div  style="position:absolute; width:12%; left:12%; top:75%;" >
+			<img id="img13" src="" width="99%"/>
+		</div>
+		<div style="position:absolute; width:12%; left:32%; top:75%;" >
+			<img id="img14" src="" width="99%"/>
+		</div>
+		<div  style="position:absolute; width:12%; left:52%; top:75%;" >
+			<img id="img15" src="" width="99%"/>
+		</div>
+		<div style="position:absolute; width:12%; left:72%; top:75%;" >
+			<img id="img16" src="" width="99%"/>
+		</div>
+
+
+		<button id="bt1" style="position:absolute; width:15%; left:10%; top:0%;">
+			<img src="./img/site/jM_bt_1.png" width="99%"/> 
+		</button>
+		<button id="bt2" style="position:absolute; width:15%; left:30%; top:0%;">
+			<img src="./img/site/jM_bt_2.png" width="99%"/>
+		</button>
+		<button id="bt3" style="position:absolute; width:15%; left:50%; top:0%;">
+			<img src="./img/site/jM_bt_3.png" width="99%"/> 
+		</button>
+		<button id="bt4" style="position:absolute; width:15%; left:70%; top:0%;">
+			<img src="./img/site/jM_bt_4.png" width="99%"/>
+		</button>
+
+		<button id="bt5" style="position:absolute; width:15%; left:10%; top:25%;">
+			<img src="./img/site/jM_bt_5.png" width="99%"/> 
+		</button>
+		<button id="bt6" style="position:absolute; width:15%; left:30%; top:25%;">
+			<img src="./img/site/jM_bt_6.png" width="99%"/>
+		</button>
+		<button id="bt7" style="position:absolute; width:15%; left:50%; top:25%;">
+			<img src="./img/site/jM_bt_7.png" width="99%"/> 
+		</button>
+		<button id="bt8" style="position:absolute; width:15%; left:70%; top:25%;">
+			<img src="./img/site/jM_bt_8.png" width="99%"/>
+		</button>
+				
+		<button id="bt9" style="position:absolute; width:15%; left:10%; top:50%;">
+			<img src="./img/site/jM_bt_9.png" width="99%"/> 
+		</button>
+		<button id="bt10" style="position:absolute; width:15%; left:30%; top:50%;">
+			<img src="./img/site/jM_bt_10.png" width="99%"/>
+		</button>
+		<button id="bt11" style="position:absolute; width:15%; left:50%; top:50%;">
+			<img src="./img/site/jM_bt_11.png" width="99%"/> 
+		</button>
+		<button id="bt12" style="position:absolute; width:15%; left:70%; top:50%;">
+			<img src="./img/site/jM_bt_12.png" width="99%"/>
+		</button>
+
+		<button id="bt13" style="position:absolute; width:15%; left:10%; top:75%;">
+			<img src="./img/site/jM_bt_13.png" width="99%"/> 
+		</button>
+		<button id="bt14" style="position:absolute; width:15%; left:30%; top:75%;">
+			<img src="./img/site/jM_bt_14.png" width="99%"/>
+		</button>
+		<button id="bt15" style="position:absolute; width:15%; left:50%; top:75%;">
+			<img src="./img/site/jM_bt_15.png" width="99%"/> 
+		</button>
+		<button id="bt16" style="position:absolute; width:15%; left:70%; top:75%;">
+			<img src="./img/site/jM_bt_16.png" width="99%"/>
+		</button>
+
+	</div>
+	<div id="trace" style="position:absolute; width:97%; text-align: center; margin-top:39%;" >
+		<a href="site2.html">Voltar</a>
+	</div>
+</body>
+</html>
