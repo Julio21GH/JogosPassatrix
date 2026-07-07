@@ -3,13 +3,12 @@
 	@font-face {
 		font-family: myFirstFont;
 
-		src: url("TovariSans.otf");
+		src: url("./font/TovariSans.otf");
 	}
 
 	*{
    		font-family: myFirstFont;
-		font-size: 19px;
-	
+		font-size: clamp(1rem, 4vw, 4rem);	
 	}
 
 </style>
@@ -45,12 +44,12 @@ function redirecionar(){
 <body style="overflow-x: hidden; overflow-y: scroll;">
 <div id="palco" style="border:2px solid red; width:98%; height:99%; margin-left:auto; margin-right:auto; display:block;">
 	<div style="position:absolute; width:90%; left:5%; margin-top:25%; text-align: center;"/>Carregando...</div>
-	<img src="bgSite.jpg" style="position:absolute; width:98%; left:1%; margin-top:-2%;"/>
+	<img src="./img/site/bgSite.jpg" style="position:absolute; width:98%; left:1%; margin-top:-2%;"/>
 
-	<img id="slider1" src="slider1.png" style="position:absolute; width:50%; left:25%; margin-top:32%; display:none;"/>
-	<img id="slider2" src="slider2.png" style="position:absolute; width:50%; left:25%; margin-top:32%; display:none;"/>
-	<img id="slider3" src="slider3.png" style="position:absolute; width:50%; left:25%; margin-top:32%; display:none;"/>
-	<img id="slider4" src="slider4.png" style="position:absolute; width:50%; left:25%; margin-top:32%; display:none;"/>
+	<img id="slider1" src="./img/site/slider1.png" style="position:absolute; width:50%; left:25%; margin-top:32%; display:none;"/>
+	<img id="slider2" src="./img/site/slider2.png" style="position:absolute; width:50%; left:25%; margin-top:32%; display:none;"/>
+	<img id="slider3" src="./img/site/slider3.png" style="position:absolute; width:50%; left:25%; margin-top:32%; display:none;"/>
+	<img id="slider4" src="./img/site/slider4.png" style="position:absolute; width:50%; left:25%; margin-top:32%; display:none;"/>
 
 	<div id="marcador1" style="position:absolute; border-radius: 150px; background-color:green; width:3%; height:2%; left:24%; margin-top:90%;"/>
 	</div>
@@ -61,15 +60,13 @@ function redirecionar(){
 	<div id="marcador4" style="position:absolute; border-radius: 150px; background-color:green; width:3%; height:2%; left:73%; margin-top:90%;"/>
 	</div>
 
-	<select id="cxAcao" style="position:absolute; width:30%; left:35%; margin-top:93%;" onchange="redirecionar();">
-		<option id="" value="">Caixa AÇÃO</option>
-		<option id="memoria" value="jMemoria.html">Jogo da Memória</option>
-		<option id="erros" value="jogoErros.pdf">Jogo dos Erros</option>
-		<option id="pdf2" value="PDF2">PDF Passatempos 2</option>
-		<option id="pdf1" value="PDF1">PDF Passatempos 1</option>
+	<select id="cxAcao" style="position:absolute; width:50%; left:25%; margin-top:93%;" onchange="redirecionar();">
+		<option value="">Caixa AÇÃO</option>
+		<option value="linkErrosFirino.html">Jogo dos Erros</option>
+		<option value="linkMemoria.html">Jogo da Memória</option>
+		<option value="linkCacaPalavras.html">Jogo Caça Palavras</option>
+		<option value="linkRevista.html">Revistas Personalizadas em PDF</option>
 	</select>
-
-
 </div>
 </body>
 </html>
