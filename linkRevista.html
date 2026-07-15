@@ -4,7 +4,7 @@
 	@font-face {
 		font-family: myFirstFont;
 
-		src: url("TovariSans.otf");
+		src: url("./font/TovariSans.otf");
 	}
 
 	*{
@@ -15,13 +15,22 @@
 
 </style>
 
+<script>
+function bbPay(){
+	window.open("https://bbpay.apps.bb.com.br/m/#/cm49eyJvcHIiOiJDQ0siLCJzb2xpY2l0YXRpb25OdW1iZXIiOiI4OTc0MTgwNiJ9","_self");
+}
+</script>
 <body style="overflow-x: hidden; overflow-y: scroll;">
+
 	<div id="palco" style="width:98%; height:99%; margin-left:auto; margin-right:auto; display:block;">
 		<div style="position:absolute; width:90%; left:5%; margin-top:25%; text-align: center;"/>Carregando...</div>
-		<img src="bgSiteRevista.jpg" style="position:absolute; width:98%; left:1%; margin-top:-2%;"/>
+		<img src="./img/site/bgSiteRevista.jpg" style="position:absolute; width:98%; left:1%; margin-top:-2%;"/>
+		<div style="position:absolute; background-color:red; opacity:0; width:50%; padding:0 0 60% 0; display:flex; flex-direction:column; left:25%; margin-top:65%;" onclick="bbPay();"></div>
 		<div id="voltar" style="position:absolute; width:96%; text-align: center; margin-top:195%;" >
-			<a href="index.html">Voltar</a>
+			<a href="site2.html">Voltar</a>
 		</div>
 	</div>
+
+	
 </body>
 </html>
