@@ -1,10 +1,10 @@
 <html>
-	<!-- PÃ¡g do site	-->
+	<!-- Pág do site	-->
 <style>
 	@font-face {
 		font-family: myFirstFont;
 
-		src: url("TovariSans.otf");
+		src: url("./font/TovariSans.otf");
 	}
 
 	*{
@@ -15,12 +15,27 @@
 
 </style>
 
+<script>
+function clicarBotao(bt_num){
+	document.getElementById("marcador"+bt_num).style.display = "block";
+}
+</script>
+
 <body style="overflow-x: hidden; overflow-y: scroll;">
 	<div id="palco" style="width:98%; height:99%; margin-left:auto; margin-right:auto; display:block;">
 		<div style="position:absolute; width:90%; left:5%; margin-top:25%; text-align: center;"/>Carregando...</div>
-		<img src="jogoErrosFirino.jpg" style="position:absolute; width:98%; left:1%; margin-top:-2%;"/>
+		<img src="./img/site/jogoErrosFirino.jpg" style="position:absolute; width:98%; left:1%; margin-top:-2%;"/>
+
+		<img id="marcador1" src="./img/site/marcador.png" style="position:absolute; width:5%; left:16%; margin-top:42%; display:none;"/>
+		<img id="marcador2" src="./img/site/marcador.png" style="position:absolute; width:5%; left:45%; margin-top:45%; display:none;"/>
+		<img id="marcador3" src="./img/site/marcador.png" style="position:absolute; width:5%; left:67%; margin-top:65%; display:none;"/>
+
+		<div id="bt1" style="position:absolute; background-color:orange; width:15%; left:10%; margin-top:42%; opacity:0; padding:0 0 15% 0; display:flex; flex-direction:column;" onclick="clicarBotao(1);"> </div>
+		<div id="bt2" style="position:absolute; background-color:orange; width:15%; left:40%; margin-top:42%; opacity:0; padding:0 0 15% 0; display:flex; flex-direction:column;" onclick="clicarBotao(2);"> </div>
+		<div id="bt3" style="position:absolute; background-color:orange; width:15%; left:58%; margin-top:62%; opacity:0; padding:0 0 15% 0; display:flex; flex-direction:column;" onclick="clicarBotao(3);"> </div>
+
 		<div id="voltar" style="position:absolute; width:96%; text-align: center; margin-top:195%;" >
-			<a href="index.html">Voltar</a>
+			<a href="site2.html">Voltar</a>
 		</div>
 	</div>
 </body>
