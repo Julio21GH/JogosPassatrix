@@ -92,7 +92,14 @@ function alfabeto(){
 	for(var t=1;t<13;t++){
 		for(var v=1;v<17;v++){
 			document.getElementById("L"+t+"C"+v).innerHTML = alfabeto_arr[randRange(1,26)];
+			clicarBotao(t,v);
 		}
+	}
+}
+
+function clicarBotao(t,v){
+	document.getElementById("L"+t+"C"+v).onclick = function(){
+		document.getElementById("L"+t+"C"+v).style.backgroundColor = "orange";
 	}
 }
 
@@ -108,403 +115,403 @@ function inicio(){
 		<div style="position:absolute; width:90%; left:5%; margin-top:25%; text-align: center;"/>Carregando...</div>
 		<img src="jogoCacaPalavras.jpg" style="position:absolute; width:98%; left:1%; margin-top:-2%;"/>
 
-		<div id="L1C1" style="position:absolute; width:7%; aspect-ratio: 1/1; left:0.5%; margin-top:51%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">A</div>
+			<div id="L1C1" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:1.5%; margin-top:52%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">A</div>
 
-		<div id="L1C2" style="position:absolute; width:7%; aspect-ratio: 1/1; left:6.5%; margin-top:51%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">B</div>
+		<div id="L1C2" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:7.5%; margin-top:52%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">B</div>
 
-		<div id="L1C3" style="position:absolute; width:7%; aspect-ratio: 1/1; left:12.5%; margin-top:51%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">C</div>
+		<div id="L1C3" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:13.5%; margin-top:52%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">C</div>
 
-		<div id="L1C4" style="position:absolute; width:7%; aspect-ratio: 1/1; left:18.5%; margin-top:51%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">D</div>
+		<div id="L1C4" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:19.5%; margin-top:52%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">D</div>
 
-		<div id="L1C5" style="position:absolute; width:7%; aspect-ratio: 1/1; left:25%; margin-top:51%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">E</div>
+		<div id="L1C5" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:26%;margin-top:52%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">E</div>
 
-		<div id="L1C6" style="position:absolute; width:7%; aspect-ratio: 1/1; left:31%; margin-top:51%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">F</div>
+		<div id="L1C6" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:32%; margin-top:52%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">F</div>
 
-		<div id="L1C7" style="position:absolute; width:7%; aspect-ratio: 1/1; left:37%; margin-top:51%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">G</div>
+		<div id="L1C7" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:38%;margin-top:52%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">G</div>
 
-		<div id="L1C8" style="position:absolute; width:7%; aspect-ratio: 1/1; left:43%; margin-top:51%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">H</div>
+		<div id="L1C8" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:44%;margin-top:52%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">H</div>
 
-		<div id="L1C9" style="position:absolute; width:7%; aspect-ratio: 1/1; left:49.5%; margin-top:51%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">I</div>
+		<div id="L1C9" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:50.5%; margin-top:52%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">I</div>
 
-		<div id="L1C10" style="position:absolute; width:7%; aspect-ratio: 1/1; left:55.5%; margin-top:51%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">J</div>
+		<div id="L1C10" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:56.5%; margin-top:52%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">J</div>
 
-		<div id="L1C11" style="position:absolute; width:7%; aspect-ratio: 1/1; left:61.5%; margin-top:51%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">K</div>
+		<div id="L1C11" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:62.5%;margin-top:52%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">K</div>
 
-		<div id="L1C12" style="position:absolute; width:7%; aspect-ratio: 1/1; left:67.5%; margin-top:51%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">L</div>
+		<div id="L1C12" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:68.7%; margin-top:52%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">L</div>
 
-		<div id="L1C13" style="position:absolute; width:7%; aspect-ratio: 1/1; left:74%; margin-top:51%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">M</div>
+		<div id="L1C13" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:75%;margin-top:52%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">M</div>
 
-		<div id="L1C14" style="position:absolute; width:7%; aspect-ratio: 1/1; left:80%; margin-top:51%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">N</div>
+		<div id="L1C14" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:81%; margin-top:52%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">N</div>
 
-		<div id="L1C15" style="position:absolute; width:7%; aspect-ratio: 1/1; left:86%; margin-top:51%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">O</div>
+		<div id="L1C15" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:87%; margin-top:52%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">O</div>
 
-		<div id="L1C16" style="position:absolute; width:7%; aspect-ratio: 1/1; left:92%; margin-top:51%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">P</div>
+		<div id="L1C16" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:93%; margin-top:52%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">P</div>
 
 
-		<div id="L2C1" style="position:absolute; width:7%; aspect-ratio: 1/1; left:0.5%; margin-top:57%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">Q</div>
+		<div id="L2C1" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:1.5%; margin-top:58%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">Q</div>
 
-		<div id="L2C2" style="position:absolute; width:7%; aspect-ratio: 1/1; left:6.5%; margin-top:57%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">R</div>
+		<div id="L2C2" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:7.5%; margin-top:58%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">R</div>
 
-		<div id="L2C3" style="position:absolute; width:7%; aspect-ratio: 1/1; left:12.5%; margin-top:57%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">S</div>
+		<div id="L2C3" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:13.5%; margin-top:58%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">S</div>
 
-		<div id="L2C4" style="position:absolute; width:7%; aspect-ratio: 1/1; left:18.5%; margin-top:57%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">T</div>
+		<div id="L2C4" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:19.5%; margin-top:58%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">T</div>
 
-		<div id="L2C5" style="position:absolute; width:7%; aspect-ratio: 1/1; left:25%; margin-top:57%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">U</div>
+		<div id="L2C5" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:26%;margin-top:58%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">U</div>
 
-		<div id="L2C6" style="position:absolute; width:7%; aspect-ratio: 1/1; left:31%; margin-top:57%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">V</div>
+		<div id="L2C6" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:32%; margin-top:58%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">V</div>
 
-		<div id="L2C7" style="position:absolute; width:7%; aspect-ratio: 1/1; left:37%; margin-top:57%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">X</div>
+		<div id="L2C7" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:38%;margin-top:58%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">X</div>
 
-		<div id="L2C8" style="position:absolute; width:7%; aspect-ratio: 1/1; left:43%; margin-top:57%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">Y</div>
+		<div id="L2C8" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:44%;margin-top:58%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">Y</div>
 
-		<div id="L2C9" style="position:absolute; width:7%; aspect-ratio: 1/1; left:49.5%; margin-top:57%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">W</div>
+		<div id="L2C9" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:50.5%; margin-top:58%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">W</div>
 
-		<div id="L2C10" style="position:absolute; width:7%; aspect-ratio: 1/1; left:55.5%; margin-top:57%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">Z</div>
+		<div id="L2C10" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:56.5%; margin-top:58%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">Z</div>
 
-		<div id="L2C11" style="position:absolute; width:7%; aspect-ratio: 1/1; left:61.5%; margin-top:57%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">A</div>
+		<div id="L2C11" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:62.5%;margin-top:58%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">A</div>
 
-		<div id="L2C12" style="position:absolute; width:7%; aspect-ratio: 1/1; left:67.5%; margin-top:57%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">B</div>
+		<div id="L2C12" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:68.7%; margin-top:58%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">B</div>
 
-		<div id="L2C13" style="position:absolute; width:7%; aspect-ratio: 1/1; left:74%; margin-top:57%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">C</div>
+		<div id="L2C13" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:75%;margin-top:58%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">C</div>
 
-		<div id="L2C14" style="position:absolute; width:7%; aspect-ratio: 1/1; left:80%; margin-top:57%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">D</div>
+		<div id="L2C14" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:81%; margin-top:58%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">D</div>
 
-		<div id="L2C15" style="position:absolute; width:7%; aspect-ratio: 1/1; left:86%; margin-top:57%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">E</div>
+		<div id="L2C15" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:87%; margin-top:58%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">E</div>
 
-		<div id="L2C16" style="position:absolute; width:7%; aspect-ratio: 1/1; left:92%; margin-top:57%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">A</div>
+		<div id="L2C16" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:93%; margin-top:58%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">A</div>
 
 
-		<div id="L3C1" style="position:absolute; width:7%; aspect-ratio: 1/1; left:0.5%; margin-top:63.3%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">Q</div>
+		<div id="L3C1" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:1.5%; margin-top:64.3%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">Q</div>
 
-		<div id="L3C2" style="position:absolute; width:7%; aspect-ratio: 1/1; left:6.5%; margin-top:63.3%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">R</div>
+		<div id="L3C2" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:7.5%; margin-top:64.3%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">R</div>
 
-		<div id="L3C3" style="position:absolute; width:7%; aspect-ratio: 1/1; left:12.5%; margin-top:63.3%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">S</div>
+		<div id="L3C3" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:13.5%; margin-top:64.3%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">S</div>
 
-		<div id="L3C4" style="position:absolute; width:7%; aspect-ratio: 1/1; left:18.5%; margin-top:63.3%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">T</div>
+		<div id="L3C4" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:19.5%; margin-top:64.3%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">T</div>
 
-		<div id="L3C5" style="position:absolute; width:7%; aspect-ratio: 1/1; left:25%; margin-top:63.3%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">U</div>
+		<div id="L3C5" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:26%;margin-top:64.3%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">U</div>
 
-		<div id="L3C6" style="position:absolute; width:7%; aspect-ratio: 1/1; left:31%; margin-top:63.3%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">V</div>
+		<div id="L3C6" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:32%; margin-top:64.3%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">V</div>
 
-		<div id="L3C7" style="position:absolute; width:7%; aspect-ratio: 1/1; left:37%; margin-top:63.3%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">X</div>
+		<div id="L3C7" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:38%;margin-top:64.3%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">X</div>
 
-		<div id="L3C8" style="position:absolute; width:7%; aspect-ratio: 1/1; left:43%; margin-top:63.3%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">Y</div>
+		<div id="L3C8" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:44%;margin-top:64.3%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">Y</div>
 
-		<div id="L3C9" style="position:absolute; width:7%; aspect-ratio: 1/1; left:49.5%; margin-top:63.3%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">W</div>
+		<div id="L3C9" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:50.5%; margin-top:64.3%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">W</div>
 
-		<div id="L3C10" style="position:absolute; width:7%; aspect-ratio: 1/1; left:55.5%; margin-top:63.3%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">Z</div>
+		<div id="L3C10" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:56.5%; margin-top:64.3%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">Z</div>
 
-		<div id="L3C11" style="position:absolute; width:7%; aspect-ratio: 1/1; left:61.5%; margin-top:63.3%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">A</div>
+		<div id="L3C11" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:62.5%;margin-top:64.3%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">A</div>
 
-		<div id="L3C12" style="position:absolute; width:7%; aspect-ratio: 1/1; left:67.5%; margin-top:63.3%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">B</div>
+		<div id="L3C12" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:68.7%; margin-top:64.3%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">B</div>
 
-		<div id="L3C13" style="position:absolute; width:7%; aspect-ratio: 1/1; left:74%; margin-top:63.3%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">C</div>
+		<div id="L3C13" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:75%;margin-top:64.3%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">C</div>
 
-		<div id="L3C14" style="position:absolute; width:7%; aspect-ratio: 1/1; left:80%; margin-top:63.3%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">D</div>
+		<div id="L3C14" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:81%; margin-top:64.3%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">D</div>
 
-		<div id="L3C15" style="position:absolute; width:7%; aspect-ratio: 1/1; left:86%; margin-top:63.3%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">E</div>
+		<div id="L3C15" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:87%; margin-top:64.3%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">E</div>
 
-		<div id="L3C16" style="position:absolute; width:7%; aspect-ratio: 1/1; left:92%; margin-top:63.3%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">A</div>
+		<div id="L3C16" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:93%; margin-top:64.3%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">A</div>
 
 
-		<div id="L4C1" style="position:absolute; width:7%; aspect-ratio: 1/1; left:0.5%; margin-top:69.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">A</div>
+		<div id="L4C1" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:1.5%; margin-top:70.4%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">A</div>
 
-		<div id="L4C2" style="position:absolute; width:7%; aspect-ratio: 1/1; left:6.5%; margin-top:69.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">B</div>
+		<div id="L4C2" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:7.5%; margin-top:70.4%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">B</div>
 
-		<div id="L4C3" style="position:absolute; width:7%; aspect-ratio: 1/1; left:12.5%; margin-top:69.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">C</div>
+		<div id="L4C3" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:13.5%; margin-top:70.4%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">C</div>
 
-		<div id="L4C4" style="position:absolute; width:7%; aspect-ratio: 1/1; left:18.5%; margin-top:69.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">D</div>
+		<div id="L4C4" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:19.5%; margin-top:70.4%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">D</div>
 
-		<div id="L4C5" style="position:absolute; width:7%; aspect-ratio: 1/1; left:25%; margin-top:69.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">E</div>
+		<div id="L4C5" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:26%;margin-top:70.4%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">E</div>
 
-		<div id="L4C6" style="position:absolute; width:7%; aspect-ratio: 1/1; left:31%; margin-top:69.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">F</div>
+		<div id="L4C6" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:32%; margin-top:70.4%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">F</div>
 
-		<div id="L4C7" style="position:absolute; width:7%; aspect-ratio: 1/1; left:37%; margin-top:69.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">G</div>
+		<div id="L4C7" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:38%;margin-top:70.4%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">G</div>
 
-		<div id="L4C8" style="position:absolute; width:7%; aspect-ratio: 1/1; left:43%; margin-top:69.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">H</div>
+		<div id="L4C8" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:44%;margin-top:70.4%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">H</div>
 
-		<div id="L4C9" style="position:absolute; width:7%; aspect-ratio: 1/1; left:49.5%; margin-top:69.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">I</div>
+		<div id="L4C9" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:50.5%; margin-top:70.4%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">I</div>
 
-		<div id="L4C10" style="position:absolute; width:7%; aspect-ratio: 1/1; left:55.5%; margin-top:69.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">J</div>
+		<div id="L4C10" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:56.5%; margin-top:70.4%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">J</div>
 
-		<div id="L4C11" style="position:absolute; width:7%; aspect-ratio: 1/1; left:61.5%; margin-top:69.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">K</div>
+		<div id="L4C11" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:62.5%;margin-top:70.4%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">K</div>
 
-		<div id="L4C12" style="position:absolute; width:7%; aspect-ratio: 1/1; left:67.5%; margin-top:69.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">L</div>
+		<div id="L4C12" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:68.7%; margin-top:70.4%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">L</div>
 
-		<div id="L4C13" style="position:absolute; width:7%; aspect-ratio: 1/1; left:74%; margin-top:69.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">M</div>
+		<div id="L4C13" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:75%;margin-top:70.4%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">M</div>
 
-		<div id="L4C14" style="position:absolute; width:7%; aspect-ratio: 1/1; left:80%; margin-top:69.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">N</div>
+		<div id="L4C14" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:81%; margin-top:70.4%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">N</div>
 
-		<div id="L4C15" style="position:absolute; width:7%; aspect-ratio: 1/1; left:86%; margin-top:69.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">O</div>
+		<div id="L4C15" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:87%; margin-top:70.4%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">O</div>
 
-		<div id="L4C16" style="position:absolute; width:7%; aspect-ratio: 1/1; left:92%; margin-top:69.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">P</div>
+		<div id="L4C16" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:93%; margin-top:70.4%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">P</div>
 
 
-		<div id="L5C1" style="position:absolute; width:7%; aspect-ratio: 1/1; left:0.5%; margin-top:75.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">A</div>
+		<div id="L5C1" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:1.5%; margin-top:76.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">A</div>
 
-		<div id="L5C2" style="position:absolute; width:7%; aspect-ratio: 1/1; left:6.5%; margin-top:75.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">B</div>
+		<div id="L5C2" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:7.5%; margin-top:76.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">B</div>
 
-		<div id="L5C3" style="position:absolute; width:7%; aspect-ratio: 1/1; left:12.5%; margin-top:75.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">C</div>
+		<div id="L5C3" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:13.5%; margin-top:76.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">C</div>
 
-		<div id="L5C4" style="position:absolute; width:7%; aspect-ratio: 1/1; left:18.5%; margin-top:75.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">D</div>
+		<div id="L5C4" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:19.5%; margin-top:76.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">D</div>
 
-		<div id="L5C5" style="position:absolute; width:7%; aspect-ratio: 1/1; left:25%; margin-top:75.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">E</div>
+		<div id="L5C5" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:26%;margin-top:76.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">E</div>
 
-		<div id="L5C6" style="position:absolute; width:7%; aspect-ratio: 1/1; left:31%; margin-top:75.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">F</div>
+		<div id="L5C6" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:32%; margin-top:76.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">F</div>
 
-		<div id="L5C7" style="position:absolute; width:7%; aspect-ratio: 1/1; left:37%; margin-top:75.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">G</div>
+		<div id="L5C7" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:38%;margin-top:76.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">G</div>
 
-		<div id="L5C8" style="position:absolute; width:7%; aspect-ratio: 1/1; left:43%; margin-top:75.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">H</div>
+		<div id="L5C8" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:44%;margin-top:76.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">H</div>
 
-		<div id="L5C9" style="position:absolute; width:7%; aspect-ratio: 1/1; left:49.5%; margin-top:75.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">I</div>
+		<div id="L5C9" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:50.5%; margin-top:76.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">I</div>
 
-		<div id="L5C10" style="position:absolute; width:7%; aspect-ratio: 1/1; left:55.5%; margin-top:75.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">J</div>
+		<div id="L5C10" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:56.5%; margin-top:76.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">J</div>
 
-		<div id="L5C11" style="position:absolute; width:7%; aspect-ratio: 1/1; left:61.5%; margin-top:75.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">K</div>
+		<div id="L5C11" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:62.5%;margin-top:76.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">K</div>
 
-		<div id="L5C12" style="position:absolute; width:7%; aspect-ratio: 1/1; left:67.5%; margin-top:75.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">L</div>
+		<div id="L5C12" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:68.7%; margin-top:76.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">L</div>
 
-		<div id="L5C13" style="position:absolute; width:7%; aspect-ratio: 1/1; left:74%; margin-top:75.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">M</div>
+		<div id="L5C13" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:75%;margin-top:76.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">M</div>
 
-		<div id="L5C14" style="position:absolute; width:7%; aspect-ratio: 1/1; left:80%; margin-top:75.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">N</div>
+		<div id="L5C14" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:81%; margin-top:76.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">N</div>
 
-		<div id="L5C15" style="position:absolute; width:7%; aspect-ratio: 1/1; left:86%; margin-top:75.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">O</div>
+		<div id="L5C15" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:87%; margin-top:76.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">O</div>
 
-		<div id="L5C16" style="position:absolute; width:7%; aspect-ratio: 1/1; left:92%; margin-top:75.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">P</div>
+		<div id="L5C16" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:93%; margin-top:76.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">P</div>
 
 
-		<div id="L6C1" style="position:absolute; width:7%; aspect-ratio: 1/1; left:0.5%; margin-top:81.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">A</div>
+		<div id="L6C1" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:1.5%; margin-top:82.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">A</div>
 
-		<div id="L6C2" style="position:absolute; width:7%; aspect-ratio: 1/1; left:6.5%; margin-top:81.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">B</div>
+		<div id="L6C2" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:7.5%; margin-top:82.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">B</div>
 
-		<div id="L6C3" style="position:absolute; width:7%; aspect-ratio: 1/1; left:12.5%; margin-top:81.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">C</div>
+		<div id="L6C3" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:13.5%; margin-top:82.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">C</div>
 
-		<div id="L6C4" style="position:absolute; width:7%; aspect-ratio: 1/1; left:18.5%; margin-top:81.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">D</div>
+		<div id="L6C4" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:19.5%; margin-top:82.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">D</div>
 
-		<div id="L6C5" style="position:absolute; width:7%; aspect-ratio: 1/1; left:25%; margin-top:81.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">E</div>
+		<div id="L6C5" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:26%;margin-top:82.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">E</div>
 
-		<div id="L6C6" style="position:absolute; width:7%; aspect-ratio: 1/1; left:31%; margin-top:81.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">F</div>
+		<div id="L6C6" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:32%; margin-top:82.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">F</div>
 
-		<div id="L6C7" style="position:absolute; width:7%; aspect-ratio: 1/1; left:37%; margin-top:81.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">G</div>
+		<div id="L6C7" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:38%;margin-top:82.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">G</div>
 
-		<div id="L6C8" style="position:absolute; width:7%; aspect-ratio: 1/1; left:43%; margin-top:81.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">H</div>
+		<div id="L6C8" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:44%;margin-top:82.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">H</div>
 
-		<div id="L6C9" style="position:absolute; width:7%; aspect-ratio: 1/1; left:49.5%; margin-top:81.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">I</div>
+		<div id="L6C9" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:50.5%; margin-top:82.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">I</div>
 
-		<div id="L6C10" style="position:absolute; width:7%; aspect-ratio: 1/1; left:55.5%; margin-top:81.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">J</div>
+		<div id="L6C10" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:56.5%; margin-top:82.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">J</div>
 
-		<div id="L6C11" style="position:absolute; width:7%; aspect-ratio: 1/1; left:61.5%; margin-top:81.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">K</div>
+		<div id="L6C11" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:62.5%;margin-top:82.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">K</div>
 
-		<div id="L6C12" style="position:absolute; width:7%; aspect-ratio: 1/1; left:67.5%; margin-top:81.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">L</div>
+		<div id="L6C12" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:68.7%; margin-top:82.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">L</div>
 
-		<div id="L6C13" style="position:absolute; width:7%; aspect-ratio: 1/1; left:74%; margin-top:81.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">M</div>
+		<div id="L6C13" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:75%;margin-top:82.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">M</div>
 
-		<div id="L6C14" style="position:absolute; width:7%; aspect-ratio: 1/1; left:80%; margin-top:81.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">N</div>
+		<div id="L6C14" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:81%; margin-top:82.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">N</div>
 
-		<div id="L6C15" style="position:absolute; width:7%; aspect-ratio: 1/1; left:86%; margin-top:81.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">O</div>
+		<div id="L6C15" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:87%; margin-top:82.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">O</div>
 
-		<div id="L6C16" style="position:absolute; width:7%; aspect-ratio: 1/1; left:92%; margin-top:81.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">P</div>
+		<div id="L6C16" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:93%; margin-top:82.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">P</div>
 
 
 
-		<div id="L7C1" style="position:absolute; width:7%; aspect-ratio: 1/1; left:0.5%; margin-top:88%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">A</div>
+		<div id="L7C1" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:1.5%; margin-top:88.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">A</div>
 
-		<div id="L7C2" style="position:absolute; width:7%; aspect-ratio: 1/1; left:6.5%; margin-top:88%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">B</div>
+		<div id="L7C2" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:7.5%; margin-top:88.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">B</div>
 
-		<div id="L7C3" style="position:absolute; width:7%; aspect-ratio: 1/1; left:12.5%; margin-top:88%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">C</div>
+		<div id="L7C3" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:13.5%; margin-top:88.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">C</div>
 
-		<div id="L7C4" style="position:absolute; width:7%; aspect-ratio: 1/1; left:18.5%; margin-top:88%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">D</div>
+		<div id="L7C4" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:19.5%; margin-top:88.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">D</div>
 
-		<div id="L7C5" style="position:absolute; width:7%; aspect-ratio: 1/1; left:25%; margin-top:88%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">E</div>
+		<div id="L7C5" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:26%;margin-top:88.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">E</div>
 
-		<div id="L7C6" style="position:absolute; width:7%; aspect-ratio: 1/1; left:31%; margin-top:88%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">F</div>
+		<div id="L7C6" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:32%; margin-top:88.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">F</div>
 
-		<div id="L7C7" style="position:absolute; width:7%; aspect-ratio: 1/1; left:37%; margin-top:88%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">G</div>
+		<div id="L7C7" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:38%;margin-top:88.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">G</div>
 
-		<div id="L7C8" style="position:absolute; width:7%; aspect-ratio: 1/1; left:43%; margin-top:88%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">H</div>
+		<div id="L7C8" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:44%;margin-top:88.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">H</div>
 
-		<div id="L7C9" style="position:absolute; width:7%; aspect-ratio: 1/1; left:49.5%; margin-top:88%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">I</div>
+		<div id="L7C9" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:50.5%; margin-top:88.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">I</div>
 
-		<div id="L7C10" style="position:absolute; width:7%; aspect-ratio: 1/1; left:55.5%; margin-top:88%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">J</div>
+		<div id="L7C10" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:56.5%; margin-top:88.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">J</div>
 
-		<div id="L7C11" style="position:absolute; width:7%; aspect-ratio: 1/1; left:61.5%; margin-top:88%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">K</div>
+		<div id="L7C11" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:62.5%;margin-top:88.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">K</div>
 
-		<div id="L7C12" style="position:absolute; width:7%; aspect-ratio: 1/1; left:67.5%; margin-top:88%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">L</div>
+		<div id="L7C12" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:68.7%; margin-top:88.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">L</div>
 
-		<div id="L7C13" style="position:absolute; width:7%; aspect-ratio: 1/1; left:74%; margin-top:88%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">M</div>
+		<div id="L7C13" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:75%;margin-top:88.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">M</div>
 
-		<div id="L7C14" style="position:absolute; width:7%; aspect-ratio: 1/1; left:80%; margin-top:88%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">N</div>
+		<div id="L7C14" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:81%; margin-top:88.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">N</div>
 
-		<div id="L7C15" style="position:absolute; width:7%; aspect-ratio: 1/1; left:86%; margin-top:88%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">O</div>
+		<div id="L7C15" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:87%; margin-top:88.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">O</div>
 
-		<div id="L7C16" style="position:absolute; width:7%; aspect-ratio: 1/1; left:92%; margin-top:88%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">P</div>
+		<div id="L7C16" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:93%; margin-top:88.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">P</div>
 
 
 
-		<div id="L8C1" style="position:absolute; width:7%; aspect-ratio: 1/1; left:0.5%; margin-top:94%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">A</div>
+		<div id="L8C1" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:1.5%; margin-top:94.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">A</div>
 
-		<div id="L8C2" style="position:absolute; width:7%; aspect-ratio: 1/1; left:6.5%; margin-top:94%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">B</div>
+		<div id="L8C2" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:7.5%; margin-top:94.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">B</div>
 
-		<div id="L8C3" style="position:absolute; width:7%; aspect-ratio: 1/1; left:12.5%; margin-top:94%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">C</div>
+		<div id="L8C3" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:13.5%; margin-top:94.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">C</div>
 
-		<div id="L8C4" style="position:absolute; width:7%; aspect-ratio: 1/1; left:18.5%; margin-top:94%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">D</div>
+		<div id="L8C4" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:19.5%; margin-top:94.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">D</div>
 
-		<div id="L8C5" style="position:absolute; width:7%; aspect-ratio: 1/1; left:25%; margin-top:94%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">E</div>
+		<div id="L8C5" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:26%;margin-top:94.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">E</div>
 
-		<div id="L8C6" style="position:absolute; width:7%; aspect-ratio: 1/1; left:31%; margin-top:94%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">F</div>
+		<div id="L8C6" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:32%; margin-top:94.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">F</div>
 
-		<div id="L8C7" style="position:absolute; width:7%; aspect-ratio: 1/1; left:37%; margin-top:94%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">G</div>
+		<div id="L8C7" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:38%;margin-top:94.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">G</div>
 
-		<div id="L8C8" style="position:absolute; width:7%; aspect-ratio: 1/1; left:43%; margin-top:94%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">H</div>
+		<div id="L8C8" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:44%;margin-top:94.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">H</div>
 
-		<div id="L8C9" style="position:absolute; width:7%; aspect-ratio: 1/1; left:49.5%; margin-top:94%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">I</div>
+		<div id="L8C9" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:50.5%; margin-top:94.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">I</div>
 
-		<div id="L8C10" style="position:absolute; width:7%; aspect-ratio: 1/1; left:55.5%; margin-top:94%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">J</div>
+		<div id="L8C10" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:56.5%; margin-top:94.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">J</div>
 
-		<div id="L8C11" style="position:absolute; width:7%; aspect-ratio: 1/1; left:61.5%; margin-top:94%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">K</div>
+		<div id="L8C11" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:62.5%;margin-top:94.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">K</div>
 
-		<div id="L8C12" style="position:absolute; width:7%; aspect-ratio: 1/1; left:67.5%; margin-top:94%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">L</div>
+		<div id="L8C12" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:68.7%; margin-top:94.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">L</div>
 
-		<div id="L8C13" style="position:absolute; width:7%; aspect-ratio: 1/1; left:74%; margin-top:94%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">M</div>
+		<div id="L8C13" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:75%;margin-top:94.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">M</div>
 
-		<div id="L8C14" style="position:absolute; width:7%; aspect-ratio: 1/1; left:80%; margin-top:94%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">N</div>
+		<div id="L8C14" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:81%; margin-top:94.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">N</div>
 
-		<div id="L8C15" style="position:absolute; width:7%; aspect-ratio: 1/1; left:86%; margin-top:94%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">O</div>
+		<div id="L8C15" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:87%; margin-top:94.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">O</div>
 
-		<div id="L8C16" style="position:absolute; width:7%; aspect-ratio: 1/1; left:92%; margin-top:94%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">P</div>
+		<div id="L8C16" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:93%; margin-top:94.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">P</div>
 
 
-		<div id="L9C1" style="position:absolute; width:7%; aspect-ratio: 1/1; left:0.5%; margin-top:100%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">A</div>
+		<div id="L9C1" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:1.5%; margin-top:101%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">A</div>
 
-		<div id="L9C2" style="position:absolute; width:7%; aspect-ratio: 1/1; left:6.5%; margin-top:100%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">B</div>
+		<div id="L9C2" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:7.5%; margin-top:101%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">B</div>
 
-		<div id="L9C3" style="position:absolute; width:7%; aspect-ratio: 1/1; left:12.5%; margin-top:100%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">C</div>
+		<div id="L9C3" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:13.5%; margin-top:101%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">C</div>
 
-		<div id="L9C4" style="position:absolute; width:7%; aspect-ratio: 1/1; left:18.5%; margin-top:100%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">D</div>
+		<div id="L9C4" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:19.5%; margin-top:101%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">D</div>
 
-		<div id="L9C5" style="position:absolute; width:7%; aspect-ratio: 1/1; left:25%; margin-top:100%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">E</div>
+		<div id="L9C5" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:26%;margin-top:101%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">E</div>
 
-		<div id="L9C6" style="position:absolute; width:7%; aspect-ratio: 1/1; left:31%; margin-top:100%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">F</div>
+		<div id="L9C6" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:32%; margin-top:101%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">F</div>
 
-		<div id="L9C7" style="position:absolute; width:7%; aspect-ratio: 1/1; left:37%; margin-top:100%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">G</div>
+		<div id="L9C7" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:38%;margin-top:101%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">G</div>
 
-		<div id="L9C8" style="position:absolute; width:7%; aspect-ratio: 1/1; left:43%; margin-top:100%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">H</div>
+		<div id="L9C8" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:44%;margin-top:101%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">H</div>
 
-		<div id="L9C9" style="position:absolute; width:7%; aspect-ratio: 1/1; left:49.5%; margin-top:100%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">I</div>
+		<div id="L9C9" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:50.5%; margin-top:101%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">I</div>
 
-		<div id="L9C10" style="position:absolute; width:7%; aspect-ratio: 1/1; left:55.5%; margin-top:100%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">J</div>
+		<div id="L9C10" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:56.5%; margin-top:101%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">J</div>
 
-		<div id="L9C11" style="position:absolute; width:7%; aspect-ratio: 1/1; left:61.5%; margin-top:100%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">K</div>
+		<div id="L9C11" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:62.5%;margin-top:101%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">K</div>
 
-		<div id="L9C12" style="position:absolute; width:7%; aspect-ratio: 1/1; left:67.5%; margin-top:100%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">L</div>
+		<div id="L9C12" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:68.7%; margin-top:101%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">L</div>
 
-		<div id="L9C13" style="position:absolute; width:7%; aspect-ratio: 1/1; left:74%; margin-top:100%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">M</div>
+		<div id="L9C13" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:75%;margin-top:101%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">M</div>
 
-		<div id="L9C14" style="position:absolute; width:7%; aspect-ratio: 1/1; left:80%; margin-top:100%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">N</div>
+		<div id="L9C14" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:81%; margin-top:101%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">N</div>
 
-		<div id="L9C15" style="position:absolute; width:7%; aspect-ratio: 1/1; left:86%; margin-top:100%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">O</div>
+		<div id="L9C15" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:87%; margin-top:101%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">O</div>
 
-		<div id="L9C16" style="position:absolute; width:7%; aspect-ratio: 1/1; left:92%; margin-top:100%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">P</div>
+		<div id="L9C16" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:93%; margin-top:101%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">P</div>
 
 
 
-		<div id="L10C1" style="position:absolute; width:7%; aspect-ratio: 1/1; left:0.5%; margin-top:106%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">A</div>
+		<div id="L10C1" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:1.5%; margin-top:107%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">A</div>
 
-		<div id="L10C2" style="position:absolute; width:7%; aspect-ratio: 1/1; left:6.5%; margin-top:106%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">B</div>
+		<div id="L10C2" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:7.5%; margin-top:107%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">B</div>
 
-		<div id="L10C3" style="position:absolute; width:7%; aspect-ratio: 1/1; left:12.5%; margin-top:106%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">C</div>
+		<div id="L10C3" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:13.5%; margin-top:107%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">C</div>
 
-		<div id="L10C4" style="position:absolute; width:7%; aspect-ratio: 1/1; left:18.5%; margin-top:106%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">D</div>
+		<div id="L10C4" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:19.5%; margin-top:107%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">D</div>
 
-		<div id="L10C5" style="position:absolute; width:7%; aspect-ratio: 1/1; left:25%; margin-top:106%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">E</div>
+		<div id="L10C5" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:26%;margin-top:107%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">E</div>
 
-		<div id="L10C6" style="position:absolute; width:7%; aspect-ratio: 1/1; left:31%; margin-top:106%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">F</div>
+		<div id="L10C6" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:32%; margin-top:107%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">F</div>
 
-		<div id="L10C7" style="position:absolute; width:7%; aspect-ratio: 1/1; left:37%; margin-top:106%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">G</div>
+		<div id="L10C7" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:38%;margin-top:107%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">G</div>
 
-		<div id="L10C8" style="position:absolute; width:7%; aspect-ratio: 1/1; left:43%; margin-top:106%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">H</div>
+		<div id="L10C8" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:44%;margin-top:107%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">H</div>
 
-		<div id="L10C9" style="position:absolute; width:7%; aspect-ratio: 1/1; left:49.5%; margin-top:106%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">I</div>
+		<div id="L10C9" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:50.5%; margin-top:107%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">I</div>
 
-		<div id="L10C10" style="position:absolute; width:7%; aspect-ratio: 1/1; left:55.5%; margin-top:106%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">J</div>
+		<div id="L10C10" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:56.5%; margin-top:107%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">J</div>
 
-		<div id="L10C11" style="position:absolute; width:7%; aspect-ratio: 1/1; left:61.5%; margin-top:106%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">K</div>
+		<div id="L10C11" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:62.5%;margin-top:107%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">K</div>
 
-		<div id="L10C12" style="position:absolute; width:7%; aspect-ratio: 1/1; left:67.5%; margin-top:106%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">L</div>
+		<div id="L10C12" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:68.7%; margin-top:107%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">L</div>
 
-		<div id="L10C13" style="position:absolute; width:7%; aspect-ratio: 1/1; left:74%; margin-top:106%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">M</div>
+		<div id="L10C13" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:75%;margin-top:107%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">M</div>
 
-		<div id="L10C14" style="position:absolute; width:7%; aspect-ratio: 1/1; left:80%; margin-top:106%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">N</div>
+		<div id="L10C14" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:81%; margin-top:107%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">N</div>
 
-		<div id="L10C15" style="position:absolute; width:7%; aspect-ratio: 1/1; left:86%; margin-top:106%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">O</div>
+		<div id="L10C15" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:87%; margin-top:107%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">O</div>
 
-		<div id="L10C16" style="position:absolute; width:7%; aspect-ratio: 1/1; left:92%; margin-top:106%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">P</div>
+		<div id="L10C16" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:93%; margin-top:107%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">P</div>
 
 
-		<div id="L11C1" style="position:absolute; width:7%; aspect-ratio: 1/1; left:0.5%; margin-top:112.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">A</div>
+		<div id="L11C1" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:1.5%; margin-top:113%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">A</div>
 
-		<div id="L11C2" style="position:absolute; width:7%; aspect-ratio: 1/1; left:6.5%; margin-top:112.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">B</div>
+		<div id="L11C2" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:7.5%; margin-top:113%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">B</div>
 
-		<div id="L11C3" style="position:absolute; width:7%; aspect-ratio: 1/1; left:12.5%; margin-top:112.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">C</div>
+		<div id="L11C3" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:13.5%; margin-top:113%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">C</div>
 
-		<div id="L11C4" style="position:absolute; width:7%; aspect-ratio: 1/1; left:18.5%; margin-top:112.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">D</div>
+		<div id="L11C4" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:19.5%; margin-top:113%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">D</div>
 
-		<div id="L11C5" style="position:absolute; width:7%; aspect-ratio: 1/1; left:25%; margin-top:112.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">E</div>
+		<div id="L11C5" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:26%;margin-top:113%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">E</div>
 
-		<div id="L11C6" style="position:absolute; width:7%; aspect-ratio: 1/1; left:31%; margin-top:112.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">F</div>
+		<div id="L11C6" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:32%; margin-top:113%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">F</div>
 
-		<div id="L11C7" style="position:absolute; width:7%; aspect-ratio: 1/1; left:37%; margin-top:112.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">G</div>
+		<div id="L11C7" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:38%;margin-top:113%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">G</div>
 
-		<div id="L11C8" style="position:absolute; width:7%; aspect-ratio: 1/1; left:43%; margin-top:112.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">H</div>
+		<div id="L11C8" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:44%;margin-top:113%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">H</div>
 
-		<div id="L11C9" style="position:absolute; width:7%; aspect-ratio: 1/1; left:49.5%; margin-top:112.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">I</div>
+		<div id="L11C9" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:50.5%; margin-top:113%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">I</div>
 
-		<div id="L11C10" style="position:absolute; width:7%; aspect-ratio: 1/1; left:55.5%; margin-top:112.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">J</div>
+		<div id="L11C10" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:56.5%; margin-top:113%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">J</div>
 
-		<div id="L11C11" style="position:absolute; width:7%; aspect-ratio: 1/1; left:61.5%; margin-top:112.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">K</div>
+		<div id="L11C11" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:62.5%;margin-top:113%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">K</div>
 
-		<div id="L11C12" style="position:absolute; width:7%; aspect-ratio: 1/1; left:67.5%; margin-top:112.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">L</div>
+		<div id="L11C12" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:68.7%; margin-top:113%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">L</div>
 
-		<div id="L11C13" style="position:absolute; width:7%; aspect-ratio: 1/1; left:74%; margin-top:112.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">M</div>
+		<div id="L11C13" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:75%;margin-top:113%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">M</div>
 
-		<div id="L11C14" style="position:absolute; width:7%; aspect-ratio: 1/1; left:80%; margin-top:112.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">N</div>
+		<div id="L11C14" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:81%; margin-top:113%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">N</div>
 
-		<div id="L11C15" style="position:absolute; width:7%; aspect-ratio: 1/1; left:86%; margin-top:112.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">O</div>
+		<div id="L11C15" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:87%; margin-top:113%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">O</div>
 
-		<div id="L11C16" style="position:absolute; width:7%; aspect-ratio: 1/1; left:92%; margin-top:112.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">P</div>
+		<div id="L11C16" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:93%; margin-top:113%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">P</div>
 
 
-		<div id="L12C1" style="position:absolute; width:7%; aspect-ratio: 1/1; left:0.5%; margin-top:118.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">A</div>
+		<div id="L12C1" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:1.5%; margin-top:119.4%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">A</div>
 
-		<div id="L12C2" style="position:absolute; width:7%; aspect-ratio: 1/1; left:6.5%; margin-top:118.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">B</div>
+		<div id="L12C2" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:7.5%; margin-top:119.4%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">B</div>
 
-		<div id="L12C3" style="position:absolute; width:7%; aspect-ratio: 1/1; left:12.5%; margin-top:118.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">C</div>
+		<div id="L12C3" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:13.5%; margin-top:119.4%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">C</div>
 
-		<div id="L12C4" style="position:absolute; width:7%; aspect-ratio: 1/1; left:18.5%; margin-top:118.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">D</div>
+		<div id="L12C4" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:19.5%; margin-top:119.4%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">D</div>
 
-		<div id="L12C5" style="position:absolute; width:7%; aspect-ratio: 1/1; left:25%; margin-top:118.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">E</div>
+		<div id="L12C5" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:26%;margin-top:119.4%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">E</div>
 
-		<div id="L12C6" style="position:absolute; width:7%; aspect-ratio: 1/1; left:31%; margin-top:118.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">F</div>
+		<div id="L12C6" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:32%; margin-top:119.4%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">F</div>
 
-		<div id="L12C7" style="position:absolute; width:7%; aspect-ratio: 1/1; left:37%; margin-top:118.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">G</div>
+		<div id="L12C7" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:38%;margin-top:119.4%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">G</div>
 
-		<div id="L12C8" style="position:absolute; width:7%; aspect-ratio: 1/1; left:43%; margin-top:118.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">H</div>
+		<div id="L12C8" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:44%;margin-top:119.4%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">H</div>
 
-		<div id="L12C9" style="position:absolute; width:7%; aspect-ratio: 1/1; left:49.5%; margin-top:118.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">I</div>
+		<div id="L12C9" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:50.5%; margin-top:119.4%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">I</div>
 
-		<div id="L12C10" style="position:absolute; width:7%; aspect-ratio: 1/1; left:55.5%; margin-top:118.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">J</div>
+		<div id="L12C10" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:56.5%; margin-top:119.4%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">J</div>
 
-		<div id="L12C11" style="position:absolute; width:7%; aspect-ratio: 1/1; left:61.5%; margin-top:118.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">K</div>
+		<div id="L12C11" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:62.5%;margin-top:119.4%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">K</div>
 
-		<div id="L12C12" style="position:absolute; width:7%; aspect-ratio: 1/1; left:67.5%; margin-top:118.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">L</div>
+		<div id="L12C12" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:68.7%; margin-top:119.4%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">L</div>
 
-		<div id="L12C13" style="position:absolute; width:7%; aspect-ratio: 1/1; left:74%; margin-top:118.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">M</div>
+		<div id="L12C13" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:75%;margin-top:119.4%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">M</div>
 
-		<div id="L12C14" style="position:absolute; width:7%; aspect-ratio: 1/1; left:80%; margin-top:118.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">N</div>
+		<div id="L12C14" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:81%; margin-top:119.4%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">N</div>
 
-		<div id="L12C15" style="position:absolute; width:7%; aspect-ratio: 1/1; left:86%; margin-top:118.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">O</div>
+		<div id="L12C15" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:87%; margin-top:119.4%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">O</div>
 
-		<div id="L12C16" style="position:absolute; width:7%; aspect-ratio: 1/1; left:92%; margin-top:118.5%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">P</div>
+		<div id="L12C16" style="position:absolute; border-radius: 20px; width:5%; aspect-ratio: 1/1; left:93%; margin-top:119.4%; font-size: clamp(1rem, 5vw, 5rem); text-align:center; display:flex; align-items:center; justify-content:center;">P</div>
 
 		<div id="voltar" style="position:absolute; width:96%; text-align: center; margin-top:195%;" >
 			<a href="index.html">Voltar</a>
