@@ -123,7 +123,7 @@ function clicarBotoes(i){
 
 function checarPares(){
 	if(clicadas_arr[1] == clicadas_arr[2]){
-
+		frasesMotivacao(document.getElementById("nome_txt").value);
 
 	} else if(clicadas_arr[1] != clicadas_arr[2]){
 		document.getElementById("bt"+id_arr[1]).style.transform = "scale(1,1)";
@@ -136,8 +136,6 @@ function checarPares(){
 		clearInterval(tempoEfeito_num); //corrigir bug
 		id_arr = [0,0,0]; //corrigir bug
 		clicadas_arr = [];//corrigir bug
-
-
 	}
 
 	id_arr = [0,0,0];
@@ -195,11 +193,22 @@ function efeitoFlip(){
 	document.getElementById("img"+botao_num).style.transform = "scale(" + escalaFig_num+",1)";
 }
 
+var frase_arr = ["", " , show de bola! UHUUU!", ", sensacional!", ", nota 1000!"];
+
+function frasesMotivacao(nome_str){
+	var frase_num = getRandomInt(1,frase_arr.length);
+	alert(nome_str + frase_arr[frase_num]);
+}
+
 </script>
 
 <body onload="init();">
-		<div style="width:99%; text-align: center;">
-			<img id="titulo" src="titulo.png" width="62%"/>
+		<div style="text-align: center;">
+			<img id="titulo" src="./img/site/titulo.png" width="60%"/>
+		</div>
+
+		<div style="width:20%; margin-left:auto; margin-right:auto; display:block;">
+			<input id="nome_txt" type="text" placeholder="Digite seu 1ª nome!" style="width:100%; text-align:center; font-size:70%;"/>
 		</div>
 	<div id="palco" class="container" style=" position:absolute; text-align:center; display:flex; flex-direction:column;">
 
