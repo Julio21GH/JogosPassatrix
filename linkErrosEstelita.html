@@ -1,0 +1,50 @@
+<html>
+	<!-- Pág do site	-->
+<style>
+	@font-face {
+		font-family: myFirstFont;
+
+		src: url("./font/TovariSans.otf");
+	}
+
+	*{
+   		font-family: myFirstFont;
+		font-size: clamp(1rem, 4vw, 4rem);
+	
+	}
+
+</style>
+
+<script>
+var frase_arr = ["", " , mandou bem!", ", é isso aí!", ", excelente observação!"];
+
+function clicarBotao(nome_str, bt_num){
+	alert(nome_str + frase_arr[bt_num]);
+	document.getElementById("marcador"+bt_num).style.display = "block";
+}
+
+</script>
+
+<body style="overflow-x: hidden; overflow-y: scroll;">
+	<div id="palco" style="width:98%; height:99%; margin-left:auto; margin-right:auto; display:block;">
+		<div style="position:absolute; width:90%; left:5%; margin-top:25%; text-align: center;"/>Carregando...</div>
+		<img src="./img/site/bgJogoErrosEstelita.jpg" style="position:absolute; width:98%; left:1%; margin-top:-2%;"/>
+
+		<div style="position:absolute; width:20%; left:40%; margin-top:35%;">
+			<input id="nome_txt" type="text" placeholder="Digite seu 1ª nome!" style="position:absolute; width:100%; text-align:center; font-size:70%;"/>
+		</div>
+
+		<img id="marcador1" src="./img/site/marcador.png" style="position:absolute; width:5%; left:21%; margin-top:67%; display:none;"/>
+		<img id="marcador2" src="./img/site/marcador.png" style="position:absolute; width:5%; left:57%; margin-top:90%; display:none;"/>
+		<img id="marcador3" src="./img/site/marcador.png" style="position:absolute; width:5%; left:89%; margin-top:75%; display:none;"/>
+
+		<div id="bt1" style="position:absolute; background-color:orange; width:15%; left:7%; margin-top:65%; opacity:0; padding:0 0 15% 0; display:flex; flex-direction:column;" onclick="clicarBotao(document.getElementById('nome_txt').value, 1);"> </div>
+		<div id="bt2" style="position:absolute; background-color:orange; width:15%; left:52%; margin-top:85%; opacity:0; padding:0 0 15% 0; display:flex; flex-direction:column;" onclick="clicarBotao(document.getElementById('nome_txt').value, 2);"> </div>
+		<div id="bt3" style="position:absolute; background-color:orange; width:15%; left:80%; margin-top:74%; opacity:0; padding:0 0 15% 0; display:flex; flex-direction:column;" onclick="clicarBotao(document.getElementById('nome_txt').value, 3);"> </div>
+
+		<div id="voltar" style="position:absolute; width:96%; text-align: center; margin-top:195%;" >
+			<a href="site2.html">Voltar</a>
+		</div>
+	</div>
+</body>
+</html>
