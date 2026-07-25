@@ -12,6 +12,23 @@
 	
 	}
 
+	/* Estilo padrão para computadores */
+.container {
+	width: 60%;
+	right: 20%;
+	padding:0 0 35% 0;
+	//background-color: blue;
+}
+
+/* Estilo para celulares (telas até 768px) */
+@media (max-width: 768px) {
+	.container {
+		width: 96%;
+		right: 2%;
+		padding:0 0 50% 0;
+		//background-color: red;
+	}
+}
 </style>
 <script>
 var escalaBt_num = 1;
@@ -184,7 +201,8 @@ function efeitoFlip(){
 		<div style="width:99%; text-align: center;">
 			<img id="titulo" src="titulo.png" width="62%"/>
 		</div>
-	<div id="palco" style="border:2px solid white; position:absolute; width:80%; padding:0 0 50% 0; margin-left:10%; display:flex; flex-direction:column;">
+	<div id="palco" class="container" style=" position:absolute; text-align:center; display:flex; flex-direction:column;">
+
 		<div  style="position:absolute; width:12%; left:12%; top:0%;" >
 			<img id="img1" src="" width="99%"/>
 		</div>
@@ -286,10 +304,11 @@ function efeitoFlip(){
 		<button id="bt16" style="position:absolute; width:15%; left:70%; top:75%;">
 			<img src="jM_bt_16.png" width="99%"/>
 		</button>
+		
+		<div id="voltar" style="position:absolute; text-align:center; margin-top:60%;" >
+			<a href="site2.html">Voltar</a>
+		</div>
+	</div>
 
-	</div>
-	<div id="trace" style="position:absolute; width:97%; text-align: center; margin-top:50%;" >
-		<a href="index.html">Voltar</a>
-	</div>
 </body>
 </html>
